@@ -18,11 +18,11 @@
  *
  */
 
-// const HDWalletProvider = require('truffle-hdwallet-provider');
+const HDWalletProvider = require('truffle-hdwallet-provider');
 // const infuraKey = "fj4jll3k.....";
 //
 // const fs = require('fs');
-// const mnemonic = fs.readFileSync(".secret").toString().trim();
+const mnemonic = "uncle joj .................... fun finger";
 
 module.exports = {
   /**
@@ -48,15 +48,15 @@ module.exports = {
       network_id: "*",       // Any network (default: none)
      },
 
-    // Another network with more advanced options...
-    // advanced: {
-      // port: 8777,             // Custom port
-      // network_id: 1342,       // Custom network
-      // gas: 8500000,           // Gas sent with each transaction (default: ~6700000)
-      // gasPrice: 20000000000,  // 20 gwei (in wei) (default: 100 gwei)
-      // from: <address>,        // Account to send txs from (default: accounts[0])
-      // websockets: true        // Enable EventEmitter interface for web3 (default: false)
-    // },
+     
+      rinkeby: {
+          provider: () => new HDWalletProvider(mnemonic, 'https://rinkeby.infura.io/v3/8369205482374fffb4f4441052fbe9a3'),
+          network_id: 4,
+          gas: 4500000,
+          gasPrice: 10000000000
+      },
+
+  
 
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
