@@ -14,25 +14,25 @@ Purchased these 5 tokens by address 0x133cBE0ca6B3B2E0328Db20Fad3aD9c68D75A997 o
 
 To install, download or clone the repo, then:
 
-npm install
+``npm install``
 
 Start Ganache like below .
-ganache-cli
+``ganache-cli``
 
 In a separate terminal window,from inside the directory eth-contracts/ Compile smart contracts:
 
-truffle compile
+``truffle compile``
 
 This will create the smart contract artifacts in folder build\contracts.
 
 Then compile and deploy with truffle.
 
-truffle migrate --network development --reset --compile-all
+``truffle migrate --network development --reset --compile-all``
 
 Testing
 To run truffle tests from inside the directory eth-contracts/:
 
-truffle test
+``truffle test``
 
 Deployment :-
 
