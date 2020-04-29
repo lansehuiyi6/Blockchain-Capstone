@@ -12,7 +12,7 @@ Purchased these 5 tokens by address 0x133cBE0ca6B3B2E0328Db20Fad3aD9c68D75A997 o
 
 
 
-To install, download or clone the repo, then:
+## To install, download or clone the repo, then:
 
 ``npm install``
 
@@ -29,12 +29,12 @@ Then compile and deploy with truffle.
 
 ``truffle migrate --network development --reset --compile-all``
 
-Testing
+## Testing
 To run truffle tests from inside the directory eth-contracts/:
 
 ``truffle test``
 
-Deployment :-
+# Deployment :-
 
 Create an account in Infura
 Create a project in Infura and get the Address for deploying in Rinkeby test network
@@ -43,7 +43,7 @@ Fund the metamask wallet by posting a tweet in https://faucet.rinkeby.io. The po
 Then deploy it using `truffle deploy - -network rinkeby`. If needed to deploy again use `truffle migrate - -network rinkeby - - reset - -compile-all`.
 
 
-Contract ABI
+# Contract ABI
 All contract API are in the build folder (eth-contracts\build\contracts). Please check it out.
 
 
